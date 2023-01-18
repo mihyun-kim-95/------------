@@ -1,0 +1,90 @@
+body{
+    font-size: 12px;
+    line-height: 16px;
+    color: #202020;
+    font-family: -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+}
+
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+}
+
+.thumb-box{
+    display: block;
+    position: relative;
+}
+
+.thumb-box::after{
+    content:'';
+    position: absolute;
+    top: 0;left: 0;bottom: 0;right: 0;
+    border: 1px solid #000;
+    opacity: 0.1;
+    background: #f00;
+}
+
+.sc-login .link-login::before,
+.footer .notice-area .link-all:after,
+.view-more .btn-viewmore::before,
+.group-event .event-title .btn-num::after,
+.shop-header .header-title .link-shop::after,
+.group-goods .shop-page .btn-num::after,
+.group-goods .btn-wrap .btn-num.next::after,
+.group-goods .btn-wrap .btn-num.prev::after,
+.sc-sidenews .nav-wrap .btn-nav::after,
+.sc-sidenews .rate::before,
+.sc-sidenews .name::before,
+.sc-login .sub-area .link-join::before,
+.sc-login .sub-area .link-id::before,
+.sc-themecast .category-list::before,
+.sc-themecast .info-area .theme-edit::before,
+.sc-news .set-area .btn-set::before,
+.sc-news .group-title .link-title::after,
+.sc-news .group-title .link-title::before,
+.sc-news .issue-area .link-media::after,
+.gnb .ic-mail::before,
+.header .service-area .link-bin::after,
+.header .service-area .link-junior::after,
+.header .service-area .link-start::after,
+.header .search-area .inner::before,
+.header .search-area .btn-submit::after,
+.header .logo-area a::before{
+    background-image: url(../images/sp-bg.png);
+    background-repeat: no-repeat;
+    background-size: 457px auto;
+}
+
+.sc-themecast .group-category .btn-next::after,
+.sc-themecast .group-category .btn-prev::after,
+.group-media_view .link-media .img-area::after,
+.gnb .weather .air-area .state::before,
+.gnb .ic-tv::before,
+.gnb .ic-live::before{
+background-image: url(../images/sp-bg2.png);
+background-repeat: no-repeat;
+background-size: 457px auto;
+}
+
+.group-plusdeal .img-wrap::after,
+.group-plusdeal .img-wrap::before,
+.group-plusdeal .shop-control .btn-box .next::after,
+.group-plusdeal .shop-control .btn-box .prev::before,
+.group-plusdeal .shop_title::before,
+.group-plus .shop-control .next::after,
+.group-plus .shop-control .prev::after,
+.group-event .event-title .next::after,
+.group-event .event-title .prev::after,
+.group-goods .page-area .next::after,
+.group-goods .page-area .prev::after,
+.group-goods .btn-wrap .next::after,
+.group-goods .btn-wrap .prev::after,
+.group-header .header-title .link-shop::before{
+background-image: url(../images/sp-bg-sm.png);
+background-repeat: no-repeat;
+background-size: 129px auto;
+}
